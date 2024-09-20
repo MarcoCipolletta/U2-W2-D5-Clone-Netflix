@@ -91,12 +91,12 @@ footer p.copy {
   font-size: 3.5rem;
   font-weight: 300;
 }
-.p-language {
+.main-profilo .p-language {
   margin-top: 1.5rem;
   margin-bottom: 0.25rem;
 }
 
-select {
+.main-profilo select {
   background-color: black;
   color: white;
   padding: 0.15rem 0.25rem;
@@ -104,34 +104,48 @@ select {
   margin-bottom: 1rem;
 }
 
-.maturity-bg {
+.main-profilo .maturity-bg {
   background-color: #6c757d68;
   text-transform: uppercase;
 }
 
-.p-maturity {
+.main-profilo .p-maturity {
   font-size: 0.9rem;
   margin-block: 0.75rem;
 }
-.form-check-label {
+.main-profilo .form-check-label {
   font-size: 0.75rem;
 }
-.form-check-input {
+.main-profilo .form-check-input {
   background: transparent;
 }
-.form-check-input[type="checkbox"] {
+.main-profilo .form-check-input[type="checkbox"] {
   border-radius: 0;
   width: 30px;
   height: 30px;
   border-color: rgb(153, 153, 153);
 }
-.form-check-input:checked[type="checkbox"] {
+.main-profilo .form-check-input:checked[type="checkbox"] {
   background: transparent;
   background-image: url(../check.svg);
   background-size: cover;
   border-color: rgb(153, 153, 153);
 }
 
-button.pr {
+.main-profilo button.pr {
   letter-spacing: 0.2rem;
+}
+
+.main-settings {
+  max-width: 1000px;
+  margin-inline: auto;
+  color: rgb(54, 54, 54);
+}
+.main-settings h1 {
+  font-size: 3.5rem;
+  font-weight: 300;
+}
+.main-settings .p-language {
+  margin-top: 1.5rem;
+  margin-bottom: 0.25rem;
 }
