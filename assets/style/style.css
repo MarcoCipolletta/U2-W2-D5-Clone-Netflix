@@ -82,7 +82,6 @@ footer p.copy {
 }
 
 .main-profilo {
-  border: 1px solid red;
   max-width: 600px;
   margin-inline: auto;
   color: white;
@@ -113,4 +112,26 @@ select {
 .p-maturity {
   font-size: 0.9rem;
   margin-block: 0.75rem;
+}
+.form-check-label {
+  font-size: 0.75rem;
+}
+.form-check-input {
+  background: transparent;
+}
+.form-check-input[type="checkbox"] {
+  border-radius: 0;
+  width: 30px;
+  height: 30px;
+  border-color: rgb(153, 153, 153);
+}
+.form-check-input:checked[type="checkbox"] {
+  background: transparent;
+  background-image: url(../check.svg);
+  background-size: cover;
+  border-color: rgb(153, 153, 153);
+}
+
+button.pr {
+  letter-spacing: 0.2rem;
 }
