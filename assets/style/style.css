@@ -1,0 +1,15 @@
+nav > div > img {
+  width: 100px;
+}
+
+nav .nav-avatar-img {
+  width: 30px;
+}
+
+.dropdown-toggle::after {
+  color: white;
+}
+
+.navbar-nav .dropdown-menu.avatar {
+  position: absolute;
+}
