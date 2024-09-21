@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Netflix</title>
+    <link href="./assets/style/custom-bootstrap.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+  </head>
+  <body class="bg-dark">
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg">
+      <div class="container-fluid px-4">
+        <img id="logo-netflix" src="./assets/netflix_logo.png" alt="netflix logo" />
+        <!-- Bottone che apre e chiude il menu a schermi piccoli  -->
+        <button
+          class="navbar-toggler order-1 border border-light"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <i class="bi bi-list text-light fs-2"></i>
+        </button>
+        <!-- elementi che rimangono sempre visibili -->
+        <ul class="navbar-nav ms-auto me-3 mb-0 order-0 order-lg-1 d-flex flex-row gap-3 align-items-center">
+          <li class="nav-item text-white">
+            <i class="bi bi-search"></i>
+          </li>
+          <li class="nav-item text-white d-none d-lg-block">KIDS</li>
+          <li class="nav-item text-white">
+            <i class="bi bi-bell-fill"></i>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              <img src="./assets/avatar.png" alt="avatar image" class="nav-avatar-img" />
+            </a>
+            <ul class="dropdown-menu dropdown-menu-end position-absolute">
+              <li><a class="dropdown-item link-light text-end" href="./profile-scss.html">Profile</a></li>
+              <li><a class="dropdown-item link-light text-end" href="./settings-scss.html">Settings</a></li>
+            </ul>
+          </li>
+        </ul>
+        <!-- menu che scompare a schermi piccoli e bisogna aprirlo con il bottone apre -->
+        <div class="collapse navbar-collapse order-2 order-lg-0" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link link-light" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link link-light active" href="#">Tv Shows</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link link-light" aria-current="page" href="#">Movies</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link link-light" aria-current="page" href="#">Recently Added</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link link-light" aria-current="page" href="#">My List</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- header -->
+    <header class="px-4 d-flex justify-content-between align-items-center">
+      <div class="header-left d-flex align-items-center">
+        <h1 class="text-white px-1 me-5">TV Shows</h1>
+        <div class="dropdown">
+          <button class="btn btn-secondary dropdown-toggle bg-transparent border-white rounded-0" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Genres
+          </button>
+          <ul class="dropdown-menu bg-transparent rounded-0 border border-white">
+            <li><button class="dropdown-item text-white" type="button">Action</button></li>
+            <li><button class="dropdown-item text-white" type="button">Comedy</button></li>
+            <li><button class="dropdown-item text-white" type="button">Dramatic</button></li>
+            <li><button class="dropdown-item text-white" type="button">Horror</button></li>
+            <li><button class="dropdown-item text-white" type="button">Anime</button></li>
+            <li><button class="dropdown-item text-white" type="button">Documentary</button></li>
+            <li><button class="dropdown-item text-white" type="button">Fantasy</button></li>
+            <li><button class="dropdown-item text-white" type="button">Sci-fi</button></li>
+            <li><button class="dropdown-item text-white" type="button">Musical</button></li>
+            <li><button class="dropdown-item text-white" type="button">Sport</button></li>
+            <li><button class="dropdown-item text-white" type="button">Romantic</button></li>
+          </ul>
+        </div>
+      </div>
+      <div class="header-right d-none d-md-flex align-items-center gap-1">
+        <div class="border border-1 py-1 px-3"><i class="bi bi-text-left text-white"></i></div>
+        <div class="border border-1 py-1 px-3"><i class="bi bi-grid-fill text-white"></i></div>
+      </div>
+    </header>
+
+    <!-- trending now -->
+    <section class="px-4 mt-4 text-white">
+      <h3>Trending Now</h3>
+      <div class="container-fluid p-0">
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-6 row-cols-xl-7 g-1 d-none d-sm-flex">
+          <div class="col">
+            <div class="text-center">
+              <img src="./assets/media/media0.webp" class="img-fluid" alt="" />
+            </div>
+          </div>
+          <div class="col d-none d-sm-block">
+            <div class="text-center">
+              <img src="./assets/media/media1.jpg" class="img-fluid" alt="" />
+            </div>
+          </div>
+          <div class="col d-none d-md-block">
+            <div class="text-center">
+              <img src="./assets/media/media2.webp" class="img-fluid" alt="" />
+            </div>
+          </div>
+          <div class="col d-none d-lg-block">
+            <div class="text-center">
+              <img src="./assets/media/media3.webp" class="img-fluid" alt="" />
+            </div>
+          </div>
+          <div class="col d-none d-lg-block">
+            <div class="text-center">
+              <img src="./assets/media/media4.jpg" class="img-fluid" alt="" />
+            </div>
+          </div>
+          <div class="col d-none d-lg-block">
+            <div>
+              <img src="./assets/media/media5.webp" class="img-fluid" alt="" />
+            </div>
+          </div>
+          <div class="col d-none d-xl-block">
+            <div class="text-center">
+              <img src="./assets/media/media6.jpg" class="img-fluid" alt="" />
+            </div>
+          </div>
+        </div>
+        <div id="slider1" class="carousel slide d-block d-sm-none">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="copertina text-center">
+                <img src="./assets/media/media0.webp" class="img-fluid" alt="" />
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="copertina text-center">
+                <img src="./assets/media/media1.jpg" class="img-fluid" alt="" />
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="copertina text-center">
+                <img src="./assets/media/media2.webp" class="img-fluid" alt="" />
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="copertina text-center">
+                <img src="./assets/media/media3.webp" class="img-fluid" alt="" />
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="copertina text-center">
+                <img src="./assets/media/media4.jpg" class="img-fluid" alt="" />
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="copertina text-center">
+                <img src="./assets/media/media5.webp" class="img-fluid" alt="" />
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="copertina text-center">
+                <img src="./assets/media/media6.jpg " class="img-fluid" alt="" />
+              </div>
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#slider1" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#slider1" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Watch it again -->
+    <section class="px-4 mt-4 text-white">
+      <h3>Watch It Again</h3>
+      <div class="container-fluid p-0">
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-6 row-cols-xl-7 g-1 d-none d-sm-flex">
+          <div class="col">
+            <div class="text-center">
+              <img src="./assets/media/media7.webp" class="img-fluid" alt="" />
+            </div>
+          </div>
+          <div class="col d-none d-sm-block">
+            <div class="text-center">
+              <img src="./assets/media/media8.webp" class="img-fluid" alt="" />
+            </div>
+          </div>
+          <div class="col d-none d-md-block">
+            <div class="text-center">
+              <img src="./assets/media/media9.jpg" class="img-fluid" alt="" />
+            </div>
+          </div>
+          <div class="col d-none d-lg-block">
+            <div class="text-center">
+              <img src="./assets/media/media10.jpg" class="img-fluid" alt="" />
+            </div>
+          </div>
+          <div class="col d-none d-lg-block">
+            <div class="text-center">
+              <img src="./assets/media/media11.jpg" class="img-fluid" alt="" />
+            </div>
+          </div>
+          <div class="col d-none d-lg-block">
+            <div>
+              <img src="./assets/media/media12.jpg" class="img-fluid" alt="" />
+            </div>
+          </div>
+          <div class="col d-none d-xl-block">
+            <div class="text-center">
+              <img src="./assets/media/media13.jpg" class="img-fluid" alt="" />
+            </div>
+          </div>
+        </div>
+        <div id="slider2" class="carousel slide d-block d-sm-none">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="copertina text-center">
+                <img src="./assets/media/media7.webp" class="img-fluid" alt="" />
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="copertina text-center">
+                <img src="./assets/media/media8.webp" class="img-fluid" alt="" />
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="copertina text-center">
+                <img src="./assets/media/media9.jpg" class="img-fluid" alt="" />
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="copertina text-center">
+                <img src="./assets/media/media10.jpg" class="img-fluid" alt="" />
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="copertina text-center">
+                <img src="./assets/media/media11.jpg" class="img-fluid" alt="" />
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="copertina text-center">
+                <img src="./assets/media/media12.jpg" class="img-fluid" alt="" />
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="copertina text-center">
+                <img src="./assets/media/media13.jpg " class="img-fluid" alt="" />
+              </div>
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#slider2" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#slider2" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- New releases-->
+    <section class="px-4 mt-4 text-white">
+      <h3>Watch It Again</h3>
+      <div class="container-fluid p-0">
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-6 row-cols-xl-7 g-1 d-none d-sm-flex">
+          <div class="col">
+            <div class="text-center">
+              <img src="./assets/media/media14.webp" class="img-fluid" alt="" />
+            </div>
+          </div>
+          <div class="col d-none d-sm-block">
+            <div class="text-center">
+              <img src="./assets/media/media15.jpg" class="img-fluid" alt="" />
+            </div>
+          </div>
+          <div class="col d-none d-md-block">
+            <div class="text-center">
+              <img src="./assets/media/media16.webp" class="img-fluid" alt="" />
+            </div>
+          </div>
+          <div class="col d-none d-lg-block">
+            <div class="text-center">
+              <img src="./assets/media/media17.jpg" class="img-fluid" alt="" />
+            </div>
+          </div>
+          <div class="col d-none d-lg-block">
+            <div class="text-center">
+              <img src="./assets/media/media18.jpg" class="img-fluid" alt="" />
+            </div>
+          </div>
+          <div class="col d-none d-lg-block">
+            <div>
+              <img src="./assets/media/media19.webp" class="img-fluid" alt="" />
+            </div>
+          </div>
+          <div class="col d-none d-xl-block">
+            <div class="text-center">
+              <img src="./assets/media/media20.jpg" class="img-fluid" alt="" />
+            </div>
+          </div>
+        </div>
+        <div id="slider3" class="carousel slide d-block d-sm-none">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="copertina text-center">
+                <img src="./assets/media/media14.webp" class="img-fluid" alt="" />
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="copertina text-center">
+                <img src="./assets/media/media15.webp" class="img-fluid" alt="" />
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="copertina text-center">
+                <img src="./assets/media/media16.jpg" class="img-fluid" alt="" />
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="copertina text-center">
+                <img src="./assets/media/media17.jpg" class="img-fluid" alt="" />
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="copertina text-center">
+                <img src="./assets/media/media18.jpg" class="img-fluid" alt="" />
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="copertina text-center">
+                <img src="./assets/media/media19.jpg" class="img-fluid" alt="" />
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="copertina text-center">
+                <img src="./assets/media/media20.jpg " class="img-fluid" alt="" />
+              </div>
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#slider3" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#slider3" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- footer -->
+    <footer class="mt-5 p-4">
+      <div class="footer-wrapper">
+        <div class="container-fluid">
+          <!-- row social -->
+          <div class="row justify-content-center mb-3">
+            <div class="col">
+              <a href="#"><i class="bi bi-facebook social"></i></a>
+              <a href="#"><i class="bi bi-instagram social"></i></a>
+              <a href="#"><i class="bi bi-twitter-x social"></i></a>
+              <a href="#"><i class="bi bi-youtube social"></i></a>
+            </div>
+          </div>
+          <!-- row link -->
+          <div class="row row-cols-2 row-cols-md-3 row-cols-lg-4">
+            <div class="col">
+              <p class="p-footer"><a href="#">Audio and Subtitles</a></p>
+            </div>
+            <div class="col">
+              <p class="p-footer"><a href="#">Media Center</a></p>
+            </div>
+            <div class="col">
+              <p class="p-footer"><a href="#">Privacy</a></p>
+            </div>
+            <div class="col">
+              <p class="p-footer"><a href="#">Contact Us</a></p>
+            </div>
+
+            <div class="col">
+              <p class="p-footer"><a href="#">Audio Description</a></p>
+            </div>
+            <div class="col">
+              <p class="p-footer"><a href="#">Investor Relations</a></p>
+            </div>
+            <div class="col">
+              <p class="p-footer"><a href="#">Legal Notices</a></p>
+            </div>
+
+            <div class="col">
+              <p class="p-footer"><a href="#">Help Center</a></p>
+            </div>
+            <div class="col">
+              <p class="p-footer"><a href="#">Jobs</a></p>
+            </div>
+            <div class="col">
+              <p class="p-footer"><a href="#">Cookie Preferences</a></p>
+            </div>
+
+            <div class="col">
+              <p class="p-footer"><a href="#">Gift Cards</a></p>
+            </div>
+
+            <div class="col">
+              <p class="p-footer"><a href="#">Terms of Use</a></p>
+            </div>
+            <div class="col">
+              <p class="p-footer"><a href="#">Corporate Information</a></p>
+            </div>
+          </div>
+          <!-- button footer -->
+          <div class="row">
+            <div class="col">
+              <button class="btn btn-outline-light rounded-0 btn-footer">Service Code</button>
+            </div>
+          </div>
+          <div class="row">
+            <p class="text-light copy">&copy; 1997-2019 Netflix, inc. &#123;i-0d00fcda2fdf9c0de&#125;</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

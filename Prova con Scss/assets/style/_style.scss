@@ -1,0 +1,147 @@
+body,
+button {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+img#logo-netflix {
+  width: 100px;
+}
+
+nav .nav-avatar-img {
+  width: 30px;
+}
+
+.dropdown-toggle::after {
+  color: white;
+}
+
+header > div > div > button.dropdown-toggle::after {
+  margin-left: 1.75rem;
+}
+.dropdown-menu {
+  background: transparent;
+  backdrop-filter: blur(10px);
+  border: 1px solid white;
+  border-radius: 4px;
+}
+
+.dropdown-item:focus,
+.dropdown-item:hover {
+  background-color: rgba(255, 255, 255, 0.193);
+  color: white;
+}
+
+@media screen and (min-width: 1200px) {
+  .row-cols-xl-7 > * {
+    flex: 0 0 auto;
+    width: 14.285714%;
+  }
+}
+footer {
+  .footer-wrapper {
+    margin-inline: auto;
+    max-width: 750px;
+  }
+
+  .row.social {
+    margin-bottom: 1rem;
+  }
+
+  i.social {
+    color: white;
+    margin-right: 0.5rem;
+    font-size: 1.25rem;
+  }
+
+  .p-footer {
+    font-size: 0.75rem;
+  }
+  .p-footer a {
+    text-decoration: none;
+    color: white;
+  }
+
+  @media screen and (min-width: 576px) {
+    .p-footer {
+      font-size: 1rem;
+    }
+  }
+
+  .btn-footer {
+    margin-block: 1.5rem;
+  }
+
+  p.copy {
+    font-size: 0.75rem;
+  }
+}
+.main-profilo {
+  max-width: 600px;
+  margin-inline: auto;
+  color: white;
+  margin-top: 10rem;
+
+  h1 {
+    font-size: 3.5rem;
+    font-weight: 300;
+  }
+  .p-language {
+    margin-top: 1.5rem;
+    margin-bottom: 0.25rem;
+  }
+
+  select {
+    background-color: black;
+    color: white;
+    padding: 0.15rem 0.25rem;
+    width: 100px;
+    margin-bottom: 1rem;
+  }
+
+  .maturity-bg {
+    background-color: #6c757d68;
+    text-transform: uppercase;
+  }
+
+  .p-maturity {
+    font-size: 0.9rem;
+    margin-block: 0.75rem;
+  }
+  .form-check-label {
+    font-size: 0.75rem;
+  }
+  .form-check-input {
+    background: transparent;
+  }
+  .form-check-input[type="checkbox"] {
+    border-radius: 0;
+    width: 30px;
+    height: 30px;
+    border-color: rgb(153, 153, 153);
+  }
+  .form-check-input:checked[type="checkbox"] {
+    background: transparent;
+    background-image: url(../check.svg);
+    background-size: cover;
+    border-color: rgb(153, 153, 153);
+  }
+
+  button.pr {
+    letter-spacing: 0.2rem;
+  }
+}
+
+.main-settings {
+  max-width: 1000px;
+  margin-inline: auto;
+  color: rgb(54, 54, 54);
+
+  h1 {
+    font-size: 3.5rem;
+    font-weight: 300;
+  }
+  .p-language {
+    margin-top: 1.5rem;
+    margin-bottom: 0.25rem;
+  }
+}

@@ -1,0 +1,69 @@
+@import "./scss/functions";
+@import "./scss/variables";
+@import "./scss/variables-dark";
+@import "./scss/maps";
+@import "./scss/mixins";
+@import "./scss/utilities";
+
+$utilities: map-merge(
+  $utilities,
+  (
+    "border":
+      map-merge(
+        map-get($utilities, "border"),
+        (
+          responsive: true
+        )
+      ),
+    "font-size":
+      map-merge(
+        map-get($utilities, "font-size"),
+        (
+          responsive: true
+        )
+      )
+  )
+);
+
+@import "./scss/utilities/api";
+
+$netflix-bg: #141414;
+
+$new-theme-colors: (
+  "dark": $netflix-bg,
+  "secondary": rgb(102, 102, 102)
+);
+
+$theme-colors: map-merge($theme-colors, $new-theme-colors);
+
+// $spacers: (
+//   0: 0,
+//   1: $spacer * .25,
+//   2: $spacer * .5,
+//   3: $spacer,
+//   4: $spacer * 1.5,
+//   5: $spacer * 3,
+
+// ) ;
+
+$new-spacers: (
+  6: $spacer * 3.5,
+  7: $spacer * 4,
+  8: $spacer * 4.5,
+  9: $spacer * 5,
+  10: $spacer * 5.5
+);
+
+$spacers: map-merge($spacers, $new-spacers);
+
+$new-font-size: (
+  7: $font-size-base * 0.8,
+  8: $font-size-base * 0.75,
+  9: $font-size-base * 0.5,
+  10: $font-size-base * 0.25
+);
+
+$font-sizes: map-merge($font-sizes, $new-font-size);
+
+@import "./scss/bootstrap.scss";
+@import "./style";
