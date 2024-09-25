@@ -31,12 +31,6 @@ header > div > div > button.dropdown-toggle::after {
   color: white;
 }
 
-@media screen and (min-width: 1200px) {
-  .row-cols-xl-7 > * {
-    flex: 0 0 auto;
-    width: 14.285714%;
-  }
-}
 footer {
   .footer-wrapper {
     margin-inline: auto;
@@ -144,4 +138,47 @@ footer {
     margin-top: 1.5rem;
     margin-bottom: 0.25rem;
   }
+}
+
+.next-btn,
+.prev-btn {
+  position: absolute;
+  top: 50%;
+  color: rgb(255, 255, 255);
+  font-size: 1.5rem;
+  text-shadow: 1px 3px 6px #000000;
+  vertical-align: middle;
+  background-color: rgba(255, 255, 255, 0.21);
+  border: 1px solid white;
+  backdrop-filter: blur(5px);
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  box-shadow: 2px 3px 6px #00000062;
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
+  z-index: 10;
+}
+
+.prev-btn {
+  left: 0px;
+}
+
+.next-btn {
+  right: 0px;
+}
+
+.next-btn:hover,
+.prev-btn:hover {
+  background-color: rgba(255, 255, 255, 0.66);
+  font-size: 1.65rem;
+}
+
+.slider {
+  overflow-x: auto;
+  scroll-behavior: smooth;
+}
+.slider::-webkit-scrollbar {
+  display: none; /* Nasconde la barra di scorrimento in WebKit (Chrome, Safari) */
 }
